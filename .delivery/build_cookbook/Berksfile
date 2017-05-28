@@ -2,6 +2,8 @@ source 'https://supermarket.chef.io'
 
 metadata
 
+cookbook 'maven', git: 'https://github.com/zamedic/maven.git'
+
 group :delivery do
   cookbook 'maven_sonatype_truck', git: 'https://github.com/zamedic/maven_sonatype_truck.git', branch: 'initialize-delivery-pipeline'
   cookbook 'delivery_build', git: 'https://github.com/chef-cookbooks/delivery_build'
