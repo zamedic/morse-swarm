@@ -312,9 +312,9 @@
   </profiles>
 
   <scm>
-    <url>https://github.com/zamedic/morse-cdi-base.git</url>
+    <url>https://github.com/zamedic/morse-swarm.git</url>
     <developerConnection>
-      scm:git:ssh://builder@default@autobot-wkbxttwhfapcogjk.us-east-1.opsworks-cm.io:8989/default/Marc/Morsecdi
+      scm:git:ssh://builder@default@autobot-wkbxttwhfapcogjk.us-east-1.opsworks-cm.io:8989/default/Marc/swarm
     </developerConnection>
     <tag>HEAD</tag>
   </scm>
