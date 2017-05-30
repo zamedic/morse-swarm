@@ -3,6 +3,9 @@
   "job_dispatch": {
     "version": "v2"
   },
+  "truck": {
+    "single_level_project": "true"
+  },
   "build_cookbook": {
     "name": "build_cookbook",
     "path": ".delivery/build_cookbook"
