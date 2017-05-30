@@ -1,0 +1,11 @@
+{
+  "bot": {
+    "name": "test",
+    "databag_secret_key_field": "test"
+  },
+  "mongo": {
+    "address": "127.0.0.1",
+    "db": "mongo"
+  },
+  "id":"_default"
+}

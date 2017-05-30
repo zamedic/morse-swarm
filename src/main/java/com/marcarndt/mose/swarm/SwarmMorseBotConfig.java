@@ -72,4 +72,5 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
     public int getProxyPort() {
         return 0;
     }
+
 }
