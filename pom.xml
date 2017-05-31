@@ -7,6 +7,16 @@
   <groupId>com.marcarndt.morse</groupId>
   <artifactId>swarm</artifactId>
   <version>1.0.2-SNAPSHOT</version>
+  <name>Morse Swarm</name>
+  <description>Wildfly Swarm server for the morse telegram bot</description>
+  <url>https://github.com/zamedic/morse-swarm</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <packaging>war</packaging>
 
