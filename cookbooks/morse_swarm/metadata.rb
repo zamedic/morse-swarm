@@ -4,7 +4,7 @@ maintainer_email 'marc@marcarndt.com'
 license          'MIT'
 description      'Installs/Configures Morse Swarm'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.0.0'
+version          '1.0.1'
 
 chef_version '>= 12.5' if respond_to?(:chef_version)
 
@@ -18,6 +18,7 @@ source_url 'https://github.com/zamedic/morse-swarm'
 
 depends 'chef-vault'
 depends 'java'
+depends 'maven'
 
 
 
