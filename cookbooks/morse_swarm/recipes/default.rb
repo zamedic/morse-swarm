@@ -19,6 +19,12 @@ end
 
 include_recipe 'morse_swarm::config_files'
 
-#Download File ...
+maven 'swarm' do
+  group_id   'com.marcarndt.swarm'
+  version    "#{node['applications']['swarm']}"
+  dest       "#{node['morse_swarm']['dir']}/morse_swarm.jar"
+  classifier 'swarm'
+  action     :put
+end
 
 execute "java  -jar #{node['morse_swarm']['dir']}/morse_swarm.jar -s#{node['morse_swarm']['dir']}#{node['morse_swarm']['application_yml']}  > /var/log/morse_monkey.log &"

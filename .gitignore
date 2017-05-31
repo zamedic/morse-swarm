@@ -2,3 +2,5 @@ morse_swarm.iml
 swarm.iml
 target
 test.yml
+.kitchen
+cookbooks/morse_swarm/Berksfile.lock
