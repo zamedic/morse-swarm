@@ -21,7 +21,7 @@ end
 include_recipe 'morse_swarm::config_files'
 
 maven 'swarm' do
-  group_id   'com.marcarndt.swarm'
+  group_id   'com.marcarndt.morse'
   version    "#{node['applications']['swarm']}"
   dest       "#{node['morse_swarm']['dir']}/morse_swarm.jar"
   classifier 'swarm'
