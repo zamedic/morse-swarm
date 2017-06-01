@@ -23,9 +23,9 @@ include_recipe 'morse_swarm::config_files'
 maven 'swarm' do
   group_id   'com.marcarndt.morse'
   version    "#{node['applications']['swarm']}"
-  dest       "#{node['morse_swarm']['dir']}/morse_swarm.jar"
+  dest       "#{node['morse_swarm']['dir']}"
   classifier 'swarm'
   action     :put
 end
 
-execute "java  -jar #{node['morse_swarm']['dir']}/morse_swarm.jar -s#{node['morse_swarm']['dir']}#{node['morse_swarm']['application_yml']}  > /var/log/morse_monkey.log &"
+execute "java  -jar #{node['morse_swarm']['dir']}/swarm.jar -s#{node['morse_swarm']['dir']}#{node['morse_swarm']['application_yml']}  > /var/log/morse_monkey.log &"
