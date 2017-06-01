@@ -5,3 +5,4 @@ default['morse_swarm']['bot']['proxy']['url'] = nil
 default['morse_swarm']['bot']['proxy']['port'] = nil
 
 default['maven']['repositories'] = ['oss.sonatype.com']
+default['java']['jdk_version'] = 8
