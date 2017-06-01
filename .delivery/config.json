@@ -10,6 +10,11 @@
     "name": "build_cookbook",
     "path": ".delivery/build_cookbook"
   },
+  "delivery-truck": {
+    "publish": {
+      "chef_server": true
+    }
+  },
   "skip_phases": [],
   "build_nodes": {},
   "dependencies": []
