@@ -11,6 +11,7 @@ execute 'pkill java' do
 end
 
 include_recipe 'java'
+include_recipe 'maven'
 
 directory node['morse_swarm']['dir'] do
   action :create
