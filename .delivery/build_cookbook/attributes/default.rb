@@ -1,1 +1,0 @@
-default['maven']['repositories'] = %w(http://repo1.maven.apache.org/maven https://oss.sonatype.org/content/groups/public/)
