@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.marcarndt.morse</groupId>
   <artifactId>swarm</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.4-SNAPSHOT</version>
   <name>Morse Swarm</name>
   <description>Wildfly Swarm server for the morse telegram bot</description>
   <url>https://github.com/zamedic/morse-swarm</url>
@@ -200,7 +202,7 @@
     <dependency>
       <groupId>com.marcarndt.morse</groupId>
       <artifactId>base</artifactId>
-            <version>1.0.16</version>
+      <version>1.0.19</version>
     </dependency>
     <!-- Java EE 7 dependency -->
     <dependency>
@@ -210,11 +212,6 @@
       <scope>provided</scope>
     </dependency>
     <!-- Wildfly Swarm Fractions -->
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>19.0</version>
-    </dependency>
     <dependency>
       <groupId>org.wildfly.swarm</groupId>
       <artifactId>cdi-config</artifactId>
@@ -333,6 +330,14 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+
+  <repositories>
+    <repository>
+      <name>OSS Nexus</name>
+      <url>https://oss.sonatype.org/content/groups/public/</url>
+      <id>oss</id>
+    </repository>
+  </repositories>
 
   <developers>
     <developer>
