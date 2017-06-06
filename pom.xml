@@ -4,7 +4,7 @@
 
   <groupId>com.marcarndt.morse</groupId>
   <artifactId>swarm</artifactId>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.5-SNAPSHOT</version>
   <name>Morse Swarm</name>
   <description>Wildfly Swarm server for the morse telegram bot</description>
   <url>https://github.com/zamedic/morse-swarm</url>
