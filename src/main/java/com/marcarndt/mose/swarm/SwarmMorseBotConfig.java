@@ -19,28 +19,36 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
      */
     @Inject
     @ConfigurationValue("bot.username")
-    String botUserName;
+    private String botUserName;
 
     /**
      * The Bot key.
      */
     @Inject
     @ConfigurationValue("bot.key")
-    String botKey;
+    private String botKey;
 
     /**
      * The Mongo url.
      */
     @Inject
     @ConfigurationValue("mongo.url")
-    String mongoUrl;
+    private String mongoUrl;
 
     /**
      * The Mongo database.
      */
     @Inject
     @ConfigurationValue("mongo.database")
-    String mongoDatabase;
+    private String mongoDatabase;
+
+    @Inject
+    @ConfigurationValue("mongo.password")
+    private String mongoPassword;
+
+    @Inject
+    @ConfigurationValue("mongo.user")
+    private String mongoUser;
 
 
     @Override
@@ -71,6 +79,16 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
     @Override
     public int getProxyPort() {
         return 0;
+    }
+
+    @Override
+    public String getMongoUser() {
+        return mongoUser;
+    }
+
+    @Override
+    public String getMongoPassword() {
+        return mongoPassword;
     }
 
 }

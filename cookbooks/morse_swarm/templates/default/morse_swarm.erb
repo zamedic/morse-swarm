@@ -9,4 +9,6 @@ proxy:
 mongo:
  url: <%= @data_bag['mongo']['address'] %>
  database: <%= @data_bag['mongo']['db'] %>
+ username: <%= @data_bag['mongo']['user'] %>
+ password: <%= @mongo_password %>
 
