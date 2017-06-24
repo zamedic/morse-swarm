@@ -19,36 +19,36 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
      */
     @Inject
     @ConfigurationValue("bot.username")
-    private String botUserName;
+    protected String botUserName;
 
     /**
      * The Bot key.
      */
     @Inject
     @ConfigurationValue("bot.key")
-    private String botKey;
+    protected String botKey;
 
     /**
      * The Mongo url.
      */
     @Inject
     @ConfigurationValue("mongo.url")
-    private String mongoUrl;
+    protected String mongoUrl;
 
     /**
      * The Mongo database.
      */
     @Inject
     @ConfigurationValue("mongo.database")
-    private String mongoDatabase;
+    protected String mongoDatabase;
 
     @Inject
     @ConfigurationValue("mongo.password")
-    private String mongoPassword;
+    protected String mongoPassword;
 
     @Inject
-    @ConfigurationValue("mongo.user")
-    private String mongoUser;
+    @ConfigurationValue("mongo.username")
+    protected String mongoUser;
 
 
     @Override
