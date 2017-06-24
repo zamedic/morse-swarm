@@ -19,74 +19,104 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
      */
     @Inject
     @ConfigurationValue("bot.username")
-    protected String botUserName;
+    protected transient String botUserName;
 
     /**
      * The Bot key.
      */
     @Inject
     @ConfigurationValue("bot.key")
-    protected String botKey;
+    protected transient String botKey;
 
     /**
      * The Mongo url.
      */
     @Inject
     @ConfigurationValue("mongo.url")
-    protected String mongoUrl;
+    protected transient String mongoUrl;
 
     /**
      * The Mongo database.
      */
     @Inject
     @ConfigurationValue("mongo.database")
-    protected String mongoDatabase;
+    protected transient String mongoDatabase;
 
+    /**
+     * The Mongo password.
+     */
     @Inject
     @ConfigurationValue("mongo.password")
-    protected String mongoPassword;
+    protected transient String mongoPassword;
 
+    /**
+     * The Mongo user.
+     */
     @Inject
     @ConfigurationValue("mongo.username")
-    protected String mongoUser;
+    protected transient String mongoUser;
 
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public String getUsername() {
         return botUserName;
     }
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public String getKey() {
         return botKey;
     }
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public String getMongoAddress() {
         return mongoUrl;
     }
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public String getMongoDatabase() {
         return mongoDatabase;
     }
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public String getProxyUrl() {
         return null;
     }
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public int getProxyPort() {
         return 0;
     }
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public String getMongoUser() {
         return mongoUser;
     }
 
     @Override
+    /**
+     *{@inheritDoc}
+     */
     public String getMongoPassword() {
         return mongoPassword;
     }
