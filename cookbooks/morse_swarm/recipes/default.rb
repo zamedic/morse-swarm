@@ -20,7 +20,7 @@ directory node['morse_swarm']['dir'] do
 end
 
 include_recipe 'morse_swarm::config_files'
-include_recipe 'morse_swarm:aws'
+include_recipe 'morse_swarm::aws'
 
 maven 'swarm' do
   group_id   'com.marcarndt.morse'
