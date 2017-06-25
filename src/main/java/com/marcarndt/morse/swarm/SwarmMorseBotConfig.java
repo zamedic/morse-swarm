@@ -1,10 +1,11 @@
-package com.marcarndt.mose.swarm;
+package com.marcarndt.morse.swarm;
 
 import com.marcarndt.morse.MorseBotConfig;
+import org.wildfly.swarm.spi.runtime.annotations.ConfigurationValue;
+
 import javax.ejb.Stateless;
 import javax.enterprise.inject.Default;
 import javax.inject.Inject;
-import org.wildfly.swarm.spi.runtime.annotations.ConfigurationValue;
 
 /**
  * Created by arndt on 2017/05/28.
