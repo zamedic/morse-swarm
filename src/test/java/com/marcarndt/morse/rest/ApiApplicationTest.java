@@ -21,14 +21,14 @@ import org.reflections.Reflections;
  * Created by arndt on 2017/06/25.
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest({Reflections.class, APIApplication.class})
-public class APIApplicationTest {
+@PrepareForTest({Reflections.class, ApiApplication.class})
+public class ApiApplicationTest {
 
   @Mock
   private Reflections reflections;
 
   @InjectMocks
-  private APIApplication apiApplication;
+  private ApiApplication apiApplication;
 
   @Test
   public void getClasses() throws Exception {
