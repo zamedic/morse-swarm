@@ -21,7 +21,7 @@ import org.reflections.Reflections;
  * Created by arndt on 2017/06/25.
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest(Reflections.class)
+@PrepareForTest({Reflections.class, APIApplication.class})
 public class APIApplicationTest {
 
   @Mock
