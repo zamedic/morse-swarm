@@ -1,4 +1,4 @@
-package com.marcarndt.mose.swarm;
+package com.marcarndt.morse.swarm;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -21,7 +21,5 @@ public class SwarmMorseBotConfigTest {
     morseBotConfig.mongoDatabase = "database";
     Assert.assertEquals("database", morseBotConfig.getMongoDatabase());
   }
-
-
 }
 

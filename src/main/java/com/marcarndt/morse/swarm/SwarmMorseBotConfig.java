@@ -1,4 +1,4 @@
-package com.marcarndt.mose.swarm;
+package com.marcarndt.morse.swarm;
 
 import com.marcarndt.morse.MorseBotConfig;
 import javax.ejb.Stateless;
