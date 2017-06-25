@@ -18,8 +18,16 @@ public class SwarmMorseBotConfigTest {
     Assert.assertEquals("test", morseBotConfig.getUsername());
     morseBotConfig.botKey = "key";
     Assert.assertEquals("key", morseBotConfig.getKey());
+
     morseBotConfig.mongoDatabase = "database";
     Assert.assertEquals("database", morseBotConfig.getMongoDatabase());
+    morseBotConfig.mongoPassword = "mongoPassword";
+    Assert.assertEquals("mongoPassword", morseBotConfig.getMongoPassword());
+    morseBotConfig.mongoUser = "mongoUser";
+    Assert.assertEquals("mongoUser", morseBotConfig.getMongoUser());
+    morseBotConfig.mongoUrl = "MongoUrl";
+    Assert.assertEquals("MongoUrl", morseBotConfig.getMongoAddress());
+
   }
 }
 
