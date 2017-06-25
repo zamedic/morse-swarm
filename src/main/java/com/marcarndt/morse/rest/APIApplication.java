@@ -12,10 +12,23 @@ import org.reflections.Reflections;
 @ApplicationPath("/api")
 public class APIApplication extends Application {
 
+  /**
+   * Annotated classes.
+   */
+  private transient Set<Class<?>> annotated;
+
+
+  /**
+   * Reutnr s alist of API Classes. Auto detects any class with the @API annotation.
+   *
+   * @return Set of classes
+   */
   @Override
   public Set<Class<?>> getClasses() {
-    final Reflections reflections = new Reflections();
-    final Set<Class<?>> annotated = reflections.getTypesAnnotatedWith(Api.class);
+    if (annotated == null) {
+      final Reflections reflections = new Reflections();
+      annotated = reflections.getTypesAnnotatedWith(Api.class);
+    }
     return annotated;
   }
 }

@@ -25,10 +25,10 @@ import org.reflections.Reflections;
 public class APIApplicationTest {
 
   @Mock
-  Reflections reflections;
+  private Reflections reflections;
 
   @InjectMocks
-  APIApplication apiApplication;
+  private APIApplication apiApplication;
 
   @Test
   public void getClasses() throws Exception {
