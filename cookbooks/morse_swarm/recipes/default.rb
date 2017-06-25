@@ -13,17 +13,19 @@ end
 include_recipe 'java'
 include_recipe 'maven'
 
+
 directory node['morse_swarm']['dir'] do
   action :create
   recursive true
 end
 
 include_recipe 'morse_swarm::config_files'
+include_recipe 'morse_swarm::aws'
 
 maven 'swarm' do
   group_id   'com.marcarndt.morse'
-  version    "#{node['applications']['swarm']}"
-  dest       "#{node['morse_swarm']['dir']}"
+  version    node['applications']['swarm']
+  dest       node['morse_swarm']['dir']
   classifier 'swarm'
   action     :put
 end
