@@ -27,7 +27,7 @@
     <dependency>
       <groupId>com.marcarndt.morse</groupId>
       <artifactId>alerts</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <!-- Java EE 7 dependency -->
     <dependency>
