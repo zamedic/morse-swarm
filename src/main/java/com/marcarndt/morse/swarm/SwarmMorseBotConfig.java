@@ -49,13 +49,19 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
   @ConfigurationValue("mongo.password")
   protected transient String mongoPassword;
 
+  /**
+   * The Proxy url.
+   */
   @Inject
   @ConfigurationValue("proxy.url")
   protected transient String proxyUrl;
 
+  /**
+   * The Proxy port.
+   */
   @Inject
   @ConfigurationValue("proxy.port")
-  protected int proxyPort;
+  protected transient int proxyPort;
 
 
   /**
