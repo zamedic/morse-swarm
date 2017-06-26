@@ -50,6 +50,21 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
   protected transient String mongoPassword;
 
   /**
+   * The Proxy url.
+   */
+  @Inject
+  @ConfigurationValue("proxy.url")
+  protected transient String proxyUrl;
+
+  /**
+   * The Proxy port.
+   */
+  @Inject
+  @ConfigurationValue("proxy.port")
+  protected transient int proxyPort;
+
+
+  /**
    * The Mongo user.
    */
   @Inject
@@ -94,7 +109,7 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
    *{@inheritDoc}
    */
   public String getProxyUrl() {
-    return null;
+    return proxyUrl;
   }
 
   @Override
@@ -102,7 +117,7 @@ public class SwarmMorseBotConfig implements MorseBotConfig {
    *{@inheritDoc}
    */
   public int getProxyPort() {
-    return 0;
+    return proxyPort;
   }
 
   @Override
