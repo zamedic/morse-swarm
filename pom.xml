@@ -22,11 +22,21 @@
     <dependency>
       <groupId>com.marcarndt.morse</groupId>
       <artifactId>base</artifactId>
-      <version>1.1.4</version>
+      <version>1.1.5</version>
     </dependency>
     <dependency>
       <groupId>com.marcarndt.morse</groupId>
       <artifactId>alerts</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.marcarndt.morse</groupId>
+      <artifactId>chef</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.marcarndt.morse</groupId>
+      <artifactId>sshsftp</artifactId>
       <version>1.0.2</version>
     </dependency>
     <!-- Java EE 7 dependency -->
@@ -55,6 +65,11 @@
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-xray-recorder-sdk-core</artifactId>
       <version>1.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish</groupId>
+      <artifactId>javax.json</artifactId>
+      <version>1.0.4</version>
     </dependency>
 
     <dependency>
