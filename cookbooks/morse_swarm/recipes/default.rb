@@ -21,6 +21,7 @@ end
 
 include_recipe 'morse_swarm::config_files'
 include_recipe 'morse_swarm::aws'
+include_recipe 'morse_swarm::keys'
 
 maven 'swarm' do
   group_id   'com.marcarndt.morse'
