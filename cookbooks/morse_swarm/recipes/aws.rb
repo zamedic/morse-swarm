@@ -3,7 +3,7 @@ remote_file "#{Chef::Config[:file_cache_path]}/xray.rpm" do
 end
 
 execute "yum install -y #{Chef::Config[:file_cache_path]}/xray.rpm" do
-  expect [0,1]
+  returns [0,1]
 end
 
 package 'awslogs'
