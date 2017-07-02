@@ -1,10 +1,10 @@
 bot:
  key: <%= @bot_key %>
  username: <%= @data_bag['bot']['name'] %>
-<% if @node['morse_swarm']['bot']['proxy']['url'] != nil-%>
+<% if @chefNode['morse_swarm']['bot']['proxy']['url'] != nil-%>
 proxy:
-  url: <%= @node['morse_swarm']['bot']['proxy']['url'] %>
-  port: <%= @node['morse_swarm']['bot']['proxy']['port'] %>
+  url: <%= @chefNode['morse_swarm']['bot']['proxy']['url'] %>
+  port: <%= @chefNode['morse_swarm']['bot']['proxy']['port'] %>
 <% end -%>
 mongo:
  url: <%= @data_bag['mongo']['address'] %>

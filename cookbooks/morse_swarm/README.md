@@ -1,13 +1,13 @@
 # sbsa_morse_monkey_cookbook Cookbook
 
-TODO: Enter the cookbook description here.
+TODO: Enter the cookbookName description here.
 
 e.g.
-This cookbook makes your favorite breakfast sandwich.
+This cookbookName makes your favorite breakfast sandwich.
 
 ## Requirements
 
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+TODO: List your cookbookName requirements. Be sure to include any requirements this cookbookName has on platforms, libraries, other cookbooks, packages, operating systems, etc.
 
 e.g.
 ### Platforms
@@ -24,7 +24,7 @@ e.g.
 
 ## Attributes
 
-TODO: List your cookbook attributes here.
+TODO: List your cookbookName attributes here.
 
 e.g.
 ### sbsa_morse_monkey_cookbook::default
@@ -48,10 +48,10 @@ e.g.
 
 ### sbsa_morse_monkey_cookbook::default
 
-TODO: Write usage instructions for each cookbook.
+TODO: Write usage instructions for each cookbookName.
 
 e.g.
-Just include `sbsa_morse_monkey_cookbook` in your node's `run_list`:
+Just include `sbsa_morse_monkey_cookbook` in your chefNode's `run_list`:
 
 ```json
 {
@@ -64,7 +64,7 @@ Just include `sbsa_morse_monkey_cookbook` in your node's `run_list`:
 
 ## Contributing
 
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
+TODO: (optional) If this is a public cookbookName, detail the process for contributing. If this is a private cookbookName, remove this section.
 
 e.g.
 1. Fork the repository on Github
