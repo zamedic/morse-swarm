@@ -5,10 +5,6 @@
 # Copyright (c) 2017 The Authors, All Rights Reserved.
 secrets = get_project_secrets
 
-docker_installation 'default' do
-  action :create
-end
-
 docker_registry 'https://index.docker.io/v1/' do
   username 'zamedic'
   password secrets['docker-password']
