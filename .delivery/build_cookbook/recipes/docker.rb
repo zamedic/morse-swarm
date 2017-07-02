@@ -9,13 +9,14 @@ docker_registry 'https://index.docker.io/v1/' do
   email 'marc@marcarndt.com'
 end
 
-docker_image 'zamedic' do
-  tag 'morse_swarm'
+docker_image 'morse_swarm' do
+  tag version_number
   source "#{node['delivery']['workspace']['repo']}/Dockerfile"
   action :build
 end
 
-docker_image 'zamedic' do
-  tag 'morse_swarm'
+docker_image 'morse_swarm' do
+  repo 'zamedic'
+  tag version_number
   action :push
 end
