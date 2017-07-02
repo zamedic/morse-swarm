@@ -6,5 +6,5 @@
 include_recipe 'maven_sonatype_truck::default'
 
 if(node['delivery']['change']['stage'] == 'acceptance' && node['delivery']['change']['phase'] == 'provision')
-  include_recipe 'docker'
+  include_recipe 'build_cookbook::docker'
 end
