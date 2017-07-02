@@ -3,7 +3,6 @@
 # Recipe:: publish
 #
 # Copyright (c) 2017 The Authors, All Rights Reserved.
-secrets = get_project_secrets
 
 docker_image 'morse_swarm' do
   tag 'morse_swarm'
