@@ -4,7 +4,7 @@
 
   <groupId>com.marcarndt.morse</groupId>
   <artifactId>swarm</artifactId>
-  <version>1.2.0-SNAPSHOT</version>
+  <version>1.2.1-SNAPSHOT</version>
   <name>Morse Swarm</name>
   <description>Wildfly Swarm server for the morse telegram bot</description>
   <url>https://github.com/zamedic/morse-swarm</url>
@@ -32,7 +32,7 @@
     <dependency>
       <groupId>com.marcarndt.morse</groupId>
       <artifactId>chef</artifactId>
-      <version>1.1.4</version>
+      <version>1.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.marcarndt.morse</groupId>
