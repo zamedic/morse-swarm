@@ -10,9 +10,15 @@ docker_registry 'https://index.docker.io/v1/' do
 end
 
 docker_image 'morse_swarm' do
-  tag pom_version_no_snapshot()
   source "#{node['delivery']['workspace']['repo']}/Dockerfile"
   action :build
+end
+
+docker_tag 'mosr swarm tag' do
+  target_repo 'morse_swarm'
+  to_tag pom_version_no_snapshot()
+  to_repo 'zamedic/morse_swarm'
+  action :tag
 end
 
 docker_image 'morse_swarm' do
