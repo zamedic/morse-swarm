@@ -9,22 +9,6 @@ docker_registry 'https://index.docker.io/v1/' do
   email 'marc@marcarndt.com'
 end
 
-docker_image 'morse_swarm' do
-  tag pom_version_no_snapshot()
-  source "#{node['delivery']['workspace']['repo']}/Dockerfile"
-  action :build
-end
-
-docker_tag 'mosre swarm tag' do
-  target_repo 'morse_swarm'
-  target_tag pom_version_no_snapshot()
-  to_tag pom_version_no_snapshot()
-  to_repo 'hub.docker.com/zamedic/morse_swarm'
-  action :tag
-end
-
-docker_image 'morse_swarm' do
-  repo 'hub.docker.com/zamedic/morse_swarm'
-  tag pom_version_no_snapshot()
-  action :push
-end
+execute "docker build -t morse_swarm #{node['delivery']['workspace']['repo']}/Dockerfile"
+execute 'docker tag morse_swarm zamedic/morse_swarm'
+execute 'docker push zamedic/morse_swarm'
