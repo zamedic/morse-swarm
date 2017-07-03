@@ -9,6 +9,6 @@ docker_registry 'https://index.docker.io/v1/' do
   email 'marc@marcarndt.com'
 end
 
-execute "docker build -t morse_swarm #{node['delivery']['workspace']['repo']}/Dockerfile"
+execute "docker build -t morse_swarm #{node['delivery']['workspace']['repo']}/"
 execute 'docker tag morse_swarm zamedic/morse_swarm'
 execute 'docker push zamedic/morse_swarm'
