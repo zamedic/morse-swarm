@@ -19,7 +19,7 @@ docker_tag 'mosre swarm tag' do
   target_repo 'morse_swarm'
   target_tag pom_version_no_snapshot()
   to_tag pom_version_no_snapshot()
-  to_repo 'https://hub.docker.com/r/zamedic/morse_swarm/'
+  to_repo 'hub.docker.com/zamedic/morse_swarm'
   action :tag
 end
 
