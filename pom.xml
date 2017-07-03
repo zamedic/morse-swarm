@@ -4,7 +4,7 @@
 
   <groupId>com.marcarndt.morse</groupId>
   <artifactId>swarm</artifactId>
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.1</version>
   <name>Morse Swarm</name>
   <description>Wildfly Swarm server for the morse telegram bot</description>
   <url>https://github.com/zamedic/morse-swarm</url>
@@ -360,7 +360,7 @@
     <developerConnection>
       scm:git:ssh://builder@default@autobot-wkbxttwhfapcogjk.us-east-1.opsworks-cm.io:8989/default/Marc/swarm
     </developerConnection>
-    <tag>HEAD</tag>
+    <tag>v1.2.1</tag>
   </scm>
 
   <distributionManagement>
