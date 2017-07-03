@@ -10,13 +10,13 @@ docker_registry 'https://index.docker.io/v1/' do
 end
 
 docker_image 'morse_swarm' do
-  tag version_number
+  tag pom_version_no_snapshot()
   source "#{node['delivery']['workspace']['repo']}/Dockerfile"
   action :build
 end
 
 docker_image 'morse_swarm' do
   repo 'zamedic'
-  tag version_number
+  tag pom_version_no_snapshot()
   action :push
 end
