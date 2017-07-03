@@ -24,7 +24,7 @@ docker_tag 'mosre swarm tag' do
 end
 
 docker_image 'morse_swarm' do
-  repo 'zamedic/morse_swarm'
+  repo 'hub.docker.com/zamedic/morse_swarm'
   tag pom_version_no_snapshot()
   action :push
 end
